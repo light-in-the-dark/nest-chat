@@ -1,5 +1,4 @@
 docker-compose.yml
-Dockerfile*
 nest-chat-ws.code-workspace
 package.json
 yarn.lock

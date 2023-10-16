@@ -1,0 +1,10 @@
+FROM node:alpine
+WORKDIR /usr/app/front
+EXPOSE 3000
+
+COPY ./client .
+
+RUN npm install
+
+CMD [ "npm", "run", "dev:client" ]
+

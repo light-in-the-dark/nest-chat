@@ -1,0 +1,15 @@
+FROM node:alpine
+WORKDIR /usr/app/back
+EXPOSE 3001
+COPY ./.env .
+
+COPY ./server .
+COPY ./prisma .
+
+RUN npm install
+
+RUN npx prisma generate
+RUN yarn prisma migrate dev
+RUN yarn prisma db pull
+
+CMD [ "npm", "run", "dev:server" ]
