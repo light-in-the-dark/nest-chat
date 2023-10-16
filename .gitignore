@@ -2,4 +2,5 @@ docker-compose.yml
 nest-chat-ws.code-workspace
 
 .obsidian
-.env
+server/.env
+client/.env
