@@ -1,7 +1,5 @@
 docker-compose.yml
 nest-chat-ws.code-workspace
-package.json
-yarn.lock
 
 .obsidian
 .env
