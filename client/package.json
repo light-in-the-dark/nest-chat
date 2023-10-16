@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev:client": "yarn --cwd client dev",
+    "dev": "vite --host 0.0.0.0",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@prisma/client": "^4.0.0",
+    "concurrently": "^7.3.0",
     "-": "^0.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -17,6 +20,7 @@
     "socket.io-client": "^4.5.1"
   },
   "devDependencies": {
+    "prisma": "^4.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@types/react-timeago": "^4.1.3",
