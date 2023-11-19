@@ -16,5 +16,3 @@ docker build -f Dockerfile-server -t nest-chat-server .
 ```
 docker run --name chat-server -p 3001:3001 -d nest-chat-server
 ```
-
-Статическое подключение до БД vkusnuts.ru:5432
