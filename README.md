@@ -1,6 +1,7 @@
 # nest-chat
 
 ## Клиент
+Клиент требует файл .env
 ```
 docker build -f Dockerfile-client -t nest-chat-client .
 ```
